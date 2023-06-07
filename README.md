@@ -55,7 +55,7 @@ to customise the output.
 	  variance-covariance method, and the Monte Carlo simulation (the historical method has been used 
 	  in this program)
 
-	- Historical data for assets have been hardcoded as arrays containing 30 daily P&L values (covering 
+	- Historical data for assets has been hardcoded as arrays containing 30 daily P&L values (covering 
 	  one month), expressed as positive and negative percentages (as decimal numbers) within the range 
 	 -0.1 and 0.1.
 
@@ -79,25 +79,25 @@ to customise the output.
 
 	- The program comprises 3 classes (Asset, Trade and Portfolio) that define the data relevant to 
 	  calculations, a Calculator class that contains the calculation logic, and a Runner class that
-    initialises some hardcoded data before the application runs
+    	  initialises some hardcoded data before the application runs
 
-	- Asset attributes are name (String) and historical values (arrays of type double)
+	- Asset attributes are name (String) and historical values (array of type double)
 
 	- Trade attributes are a specific asset (Asset object) and an investment amount (double)
 		
-	- Portofolio attributes are a name (String) and a list of trades (ArrayList of Trade objects)
+	- Portfolio attributes are a name (String) and a list of trades (ArrayList of Trade objects)
 
 	- The Calculator class contains the 2 methods that calculate VaR (tradeVar and portfolioVar) and the 
 	  methods that display the header and menus for the user interface that runs on the console
     
-  	- The Runner contains the the initialisation of the harcoded data required to run the program (assets, 
+  	- The Runner contains the initialisation of the harcoded data required to run the program (assets, 
     	  trades and portfolios) and the definition of the menu logic as a while loop containing several switches
     	  to control user input in the main menu and submenus
 
 	- The program is started by running the Runner class
 
 	- When the program starts, the main menu is displayed to the user, who is prompted to enter one of 
-	  three options (Trade, Portofolio o Exit)
+	  three options (Trade, Portfolio o Exit)
 
 	- When Trade is chosen, the user is then prompted to choose an asset type and enter both investment 
 	  amount and confidence level. They can also choose to return to the main menu.
@@ -105,7 +105,7 @@ to customise the output.
 	- When Trade is calculated, the program displays all the relevant data to the user (asset type, 
 	  investment amount, confidence level, and VaR as % and £)
 
-	- When Portofolio is chosen, the user is prompted to choose a portofolio and enter the confidence level, 
+	- When Portfolio is chosen, the user is prompted to choose a portofolio and enter the confidence level, 
 	  since the asset types and investment amounts have been harcoded for the portfolio
 
 	- When Trade is calculated, the program displays all the relevant data to the user (portfolio name, 
