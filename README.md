@@ -90,9 +90,9 @@ to customise the output.
 	- The Calculator class contains the 2 methods that calculate VaR (tradeVar and portfolioVar) and the 
 	  methods that display the header and menus for the user interface that runs on the console
     
-  - The Runner contains the the initialisation of the harcoded data required to run the program (assets, 
-    trades and portfolios) and the definition of the menu logic as a while loop containing several switches
-    to control user input in the main menu and submenus
+  	- The Runner contains the the initialisation of the harcoded data required to run the program (assets, 
+    	  trades and portfolios) and the definition of the menu logic as a while loop containing several switches
+    	  to control user input in the main menu and submenus
 
 	- The program is started by running the Runner class
 
@@ -103,7 +103,7 @@ to customise the output.
 	  amount and confidence level. They can also choose to return to the main menu.
 
 	- When Trade is calculated, the program displays all the relevant data to the user (asset type, 
-	 investment amount, confidence level, and VaR as % and £)
+	  investment amount, confidence level, and VaR as % and £)
 
 	- When Portofolio is chosen, the user is prompted to choose a portofolio and enter the confidence level, 
 	  since the asset types and investment amounts have been harcoded for the portfolio
